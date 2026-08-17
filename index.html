@@ -19,7 +19,7 @@
     </div>
     <script>
         async function get () {
-            let html = await fetch("https://script.google.com/macros/s/AKfycbx-ORghSinRiSVh5OqXDpk8wj_M1JV6qZ8Xv0coo6CxiuDO-9tluk3Qm6kumsKf-iYmmQ/exec?url=" + document.getElementById("urlber").value);
+            let html = await fetch("https://script.google.com/macros/s/AKfycbzTS3Fa73imArOwjGPQlS-Eaii-rxaTPuWZFv68CoP7NbM2QfbtjCnfgVivrsANbrUe6w/exec?url=" + document.getElementById("urlber").value);
             html = html.text();
             document.getElementById("webbox").innerHTML = html
         }
