@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>water_web</title>
+</head>
+<body>
+    <h1>
+        water_web
+    </h1>
+    <input type="text" id="urlber">
+    <button onclick="get()">
+        検索
+    </button>
+    <br>
+    <div id="webbox">
+
+    </div>
+    <script>
+        let url = "https://script.google.com/macros/s/AKfycbx-ORghSinRiSVh5OqXDpk8wj_M1JV6qZ8Xv0coo6CxiuDO-9tluk3Qm6kumsKf-iYmmQ/exec";
+        let urlber = document.getElementById("urlber");
+        let webbox = document.getElementById("webbox");
+        async function get () {
+            let html = fetch(url + "?url=" + urlber);
+            html = html.text()
+            webbox.innerHTML = html;
+        }
+    </script>
+</body>
+</html>
