@@ -22,8 +22,8 @@
         let urlber = document.getElementById("urlber");
         let webbox = document.getElementById("webbox");
         async function get () {
-            let html = fetch(url + "?url=" + urlber);
-            html = html.text()
+            let html = await fetch(url + "?url=" + urlber);
+            html = html.text();
             webbox.innerHTML = html;
         }
     </script>
