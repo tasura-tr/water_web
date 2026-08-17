@@ -22,7 +22,7 @@
         let urlber = document.getElementById("urlber");
         let webbox = document.getElementById("webbox");
         async function get () {
-            let html = await fetch(url + "?url=" + urlber);
+            let html = await fetch(url + "?url=" + urlber.value);
             html = html.text();
             webbox.innerHTML = html;
         }
