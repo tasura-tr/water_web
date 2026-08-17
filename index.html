@@ -20,7 +20,7 @@
     <script>
         async function get () {
             let html = await fetch("https://script.google.com/macros/s/AKfycbzTS3Fa73imArOwjGPQlS-Eaii-rxaTPuWZFv68CoP7NbM2QfbtjCnfgVivrsANbrUe6w/exec?url=" + document.getElementById("urlber").value);
-            html = html.text();
+            html = await html.text();
             document.getElementById("webbox").innerHTML = html
         }
     </script>
