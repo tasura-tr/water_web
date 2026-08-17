@@ -18,7 +18,9 @@
 
     </div>
     <script>
-        async function get () {document.getElementById("webbox").innerHTML = await fetch("https://script.google.com/macros/s/AKfycbx-ORghSinRiSVh5OqXDpk8wj_M1JV6qZ8Xv0coo6CxiuDO-9tluk3Qm6kumsKf-iYmmQ/exec?url=" + document.getElementById("urlber").value).text();}
+        async function get () {
+            document.getElementById("webbox").innerHTML = await fetch("https://script.google.com/macros/s/AKfycbx-ORghSinRiSVh5OqXDpk8wj_M1JV6qZ8Xv0coo6CxiuDO-9tluk3Qm6kumsKf-iYmmQ/exec?url=" + document.getElementById("urlber").value).text();
+        }
     </script>
 </body>
 </html>
