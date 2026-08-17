@@ -18,14 +18,7 @@
 
     </div>
     <script>
-        let url = "https://script.google.com/macros/s/AKfycbx-ORghSinRiSVh5OqXDpk8wj_M1JV6qZ8Xv0coo6CxiuDO-9tluk3Qm6kumsKf-iYmmQ/exec";
-        let urlber = document.getElementById("urlber");
-        let webbox = document.getElementById("webbox");
-        async function get () {
-            let html = await fetch(url + "?url=" + urlber.value);
-            html = html.text();
-            webbox.innerHTML = html;
-        }
+        async function get () {document.getElementById("webbox").innerHTML = await fetch("https://script.google.com/macros/s/AKfycbx-ORghSinRiSVh5OqXDpk8wj_M1JV6qZ8Xv0coo6CxiuDO-9tluk3Qm6kumsKf-iYmmQ/exec?url=" + document.getElementById("urlber").value).text();}
     </script>
 </body>
 </html>
